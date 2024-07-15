@@ -1,5 +1,5 @@
-import {  useRecoilValueLoadable, useSetRecoilState } from "recoil"
-import { tokenAtom, userAtom } from "../store/atoms/atoms"
+import {  useRecoilValueLoadable } from "recoil"
+import {  userAtom } from "../store/atoms/atoms"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
