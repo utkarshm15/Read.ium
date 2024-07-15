@@ -14,8 +14,8 @@ export function Dashboard(){
 
     
     if(loading){
-        return <div className="flex justify-center p-56">
-            <div className="border-gray-300 sm:size-16 size-10 md:size-20 animate-spin rounded-full border-8 border-t-blue-600 " />
+        return <div className="flex justify-center pt-40 p-20 sm:p-56">
+            <div className="border-gray-300 sm:size-16 size-12 md:size-20 animate-spin rounded-full border-8 border-t-blue-600 " />
         </div>
     
     }

@@ -14,7 +14,7 @@ export function Profile(){
     let c = 0;
     const [input,setInput] = useState(false);
     if(user.state === "loading"){
-        return <div className="flex justify-center p-56 bg-gradient-to-r from-black via-gray-500 to-black h-dvh">
+        return <div className="flex justify-center pt-40 p-20 sm:p-56 bg-gradient-to-r from-black via-gray-500 to-black h-dvh">
             <div className="border-gray-300 sm:size-16 size-10 md:size-20 animate-spin rounded-full border-8 border-t-blue-600 " />
         </div>
     }
