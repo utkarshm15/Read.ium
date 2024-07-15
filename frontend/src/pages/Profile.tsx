@@ -11,8 +11,6 @@ export function Profile(){
     const navigate = useNavigate()
     const [openModel,setOpenModel] = useState(false);
     const user = useRecoilValueLoadable(userAtom)
-    const setToken = useSetRecoilState(tokenAtom)
-    setToken(localStorage.getItem("token"))
     let c = 0;
     const [input,setInput] = useState(false);
     if(user.state === "loading"){

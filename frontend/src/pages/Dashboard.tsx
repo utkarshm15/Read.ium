@@ -4,11 +4,13 @@ import { Appbar } from "../components/Appbar";
 import { BlogSnippet } from "../components/BlogSnippet";
 import { useBlogs } from "../hooks";
 import { tokenAtom } from "../store/atoms/atoms";
+import { useEffect } from "react";
 
 export function Dashboard(){
     const {blogs,loading} = useBlogs();
     const setToken = useSetRecoilState(tokenAtom);
-    setToken(localStorage.getItem("token"))    
+    useEffect(()=>{setToken(localStorage.getItem("token"))},[])
+        
 
     
     if(loading){
